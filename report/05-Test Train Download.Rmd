@@ -1,0 +1,19 @@
+---
+title: "Test Train Download"
+output: html_document
+---
+
+## Test Train Download
+This section of code is used to download the split dataset from Google Drive, that was created in 04-Test and Training Generation pt2. This is so that you do not have to run the code. 
+
+```{r}
+if (!require("googledrive")) install.packages("googledrive")
+library("googledrive")
+```
+
+
+```{r}
+drive_deauth()
+drive_download(as_id("1BOahFx6tL9FbXN5A4oxMO4KpL99AqdRS"), path = "../data/processed/test_train.csv", overwrite = TRUE)
+```
+
