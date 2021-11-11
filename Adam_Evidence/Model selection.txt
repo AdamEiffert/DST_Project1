@@ -1,0 +1,24 @@
+Rand's measure of similarity (fossil python package) - used for comparing clusterings (which is what we are doing), drawbacks:
+index approaches upperbound of 1 as number of clusters increases without limit (but not a problem for us)
+adjusted Rand and Jaccard measures are better - use Rand most of time, use jaccard for when lots of pairs are in different data sets as this controls index when large. Can try both but Rand should be fine as only 2 clusters. Paper says that adjusted Rand makes strong assumptions about dist of data and so is less useful 
+
+Silhouette plot
+uses the silhoutette coefficient to see how similar each object is to the other objects in it's cluster. if close to 1 then it is well grouped, if close to -1 then the item should very likely be in a different cluster. But is internal so less useful
+
+Chi squared coefficient requires independence of 2 clusterings which is not the case.
+
+Fowlkes-Mallows Index makes strong assumptions on the distribution and for small no of clusters the index shows higher value than it should
+
+The Following only look at overlaps and not any errors. although not the end of the world as working with 2 clusters.
+
+.1 F measure is assymetric which fine for when an optimal model is known, which we have as we have the 'true' clustering. 
+
+.2 Melila-Heckerman measure compares the selected clustering with the optimal clustering. This can be generalised to the symmetric maximum-match-measure.
+
+.3 Van Dongen-Measure is a metric on the space of all clusterings of the same set, which make it easy to use. 
+
+Mutual information measures don't seem to have the same downsides as above although there has been less research on this.
+
+Normalised Mutual Inofrmation by Strehl & Ghosh and Fred & Jain are both simple and are bounded between 0 and 1 making it easy to interpret. 
+
+Variation of Inofrmation has been thoroughly research (unlike normalised^) - my vote

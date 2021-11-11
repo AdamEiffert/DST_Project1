@@ -1,0 +1,7 @@
+stability measures are not the most important here because we are looking for an algorithm that does well with very unknown data and so there is likely going to be a fair level of variation from the measured data. However if you were looking at data that is likely very similar to the measured data then stability is more important.
+
+External cluster validation is important here as we have pre-defined labels (normal and non-normal traffic).
+
+internal cluser validation is not important here as we already know the clusters we need (normal and non-normal)
+
+Relative cluster validation is not important here as it is generally used for determining the optimal number of clusters

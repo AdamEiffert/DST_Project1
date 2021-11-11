@@ -1,0 +1,6 @@
+https://en.wikipedia.org/wiki/Rand_index
+CLUSTER ANALYSIS AND DATA MINING An Introduction by R.S. King
+https://www.datanovia.com/en/lessons/choosing-the-best-clustering-algorithms/
+https://www.datanovia.com/en/lessons/cluster-validation-statistics-must-know-methods/
+https://stackoverflow.com/questions/20313870/difference-between-rand-and-jaccard-similarity-index
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.164.6189&rep=rep1&type=pdf
