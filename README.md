@@ -23,7 +23,7 @@ The report takes the following structure:
 * 05-Test Train Download.Rmd
 * 06-Support Vector Machine.ipynb
 * 07-Random Forest.ipynb
-* 08-Model 3.ipynb
+* 08-Isolation Forest.ipynb
 * 09-Model Analysis.ipynb
 
 ### Requirements:
