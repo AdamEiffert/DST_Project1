@@ -1,0 +1,17 @@
+---
+title: "Split Data download"
+output: html_document
+---
+## Split Data Download
+This section of code is used to download the testing and training dataset from Google Drive, that was created in 02-Test and Training Generation. This is so that you do not have to spend hours trying to run the code. 
+
+```{r}
+if (!require("googledrive")) install.packages("googledrive")
+library("googledrive")
+```
+
+
+```{r}
+drive_deauth()
+drive_download(as_id("1KIerVlvFELtugrd2vdCUbC6FQHwgNefF"), path = "../data/processed/kddcup_split.csv", overwrite = TRUE)
+```
